@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FORMULARIO DE REGISTRO</title>
+</head>
+
+<body>
+    <h1>REGISTER</h1>
+    <form action="index.html" method="POST">
+
+        <fieldset>
+            <legend>Categoria Personal</legend>
+
+            <label for="name">First Name</label>
+            <input type="text" name="name" id="name" placeholder="First name" required>
+
+            <label for="lastname">Last Name</label>
+            <input type="text" name="lastname" id="lastname" placeholder="Last name" required>
+
+            <label for="favAnimal">Favorite Animal</label>
+            <input type="text" name="favAnimal" id="favAnimal" placeholder="Favorite animal">
+
+            <label for="birth">Date Birth</label>
+            <input type="date" name="birth" id="birth" placeholder="Date of birth">
+
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend>Account</legend>
+
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Email" required>
+
+            <label for="pass">Password</label>
+            <input type="password" name="pass" id="pass" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Debe contener por lo menos un numero,una mayuscula,minuscula y 8 o mas caracteres"
+                required>
+
+            <label for="vpass">Verify Password</label>
+            <input type="password" name="vpass" id="vpass" placeholder="Verify Password" required>
+
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend>Contact</legend>
+
+            <label for="adress">Adress</label>
+            <input type="text" name="adress" id="adress" placeholder="Adress">
+
+            <label for="city">City</label>
+            <input type="text" name="city" id="city" placeholder="City">
+
+            <label for="country">Country</label>
+            <input type="text" name="country" id="country" placeholder="Country">
+
+            <label for="phone">Phone number</label>
+            <input type="text" name="phone" id="phone" placeholder="Phone number">
+
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <label for="sub">SUBMIT</label>
+            <input type="submit" name="sub" id="sub" placeholder="Submit" value="Send">
+        </fieldset>
+
+
+    </form>
+</body>
+
+</html>
